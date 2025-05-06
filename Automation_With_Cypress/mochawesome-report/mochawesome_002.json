@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-06T18:24:00.416Z",
+    "end": "2025-05-06T18:24:06.098Z",
+    "duration": 5682,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "11b33967-5e3c-474c-a5fa-16c07fdec8a9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Product.cy.js",
+      "file": "cypress\\e2e\\Product.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f56d2121-a902-42b7-bfec-3bc9b97f02e1",
+          "title": "Product page navigation test on SauceDemo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should navigate to the product detail page when a product is clicked",
+              "fullTitle": "Product page navigation test on SauceDemo should navigate to the product detail page when a product is clicked",
+              "timedOut": null,
+              "duration": 3013,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Visit the site\ncy.visit('https://www.saucedemo.com/');\nLogin_Element.username('standard_user');\nLogin_Element.password('secret_sauce');\nLogin_Element.LoginButton();\ncy.get('[data-test=\"item-4-title-link\"] > [data-test=\"inventory-item-name\"]').click();\ncy.url().should('include', 'https://www.saucedemo.com/inventory-item.html?id=4');\ncy.get('[data-test=\"inventory-item-name\"]').should('contain', 'Sauce Labs Backpack');",
+              "err": {},
+              "uuid": "1eb26f94-6ba5-4d3d-8ffb-29eefbdec2bf",
+              "parentUUID": "f56d2121-a902-42b7-bfec-3bc9b97f02e1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1eb26f94-6ba5-4d3d-8ffb-29eefbdec2bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3013,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-05-06T18:23:51.397Z",
+    "end": "2025-05-06T18:23:56.765Z",
+    "duration": 5368,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "995d94db-54c7-43f0-b7b7-2c074e8fda62",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9a167385-e6ad-4034-9a75-436958c4c32f",
+          "title": "Test the Login Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login into the website",
+              "fullTitle": "Test the Login Functionality login into the website",
+              "timedOut": null,
+              "duration": 2439,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com');\nLogin_Element.username('standard_user');\nLogin_Element.password('secret_sauce');\nLogin_Element.LoginButton();\n// Verify landing\ncy.url().should('include', 'https://www.saucedemo.com/inventory.html');\ncy.get('.app_logo').should('contain', 'Swag Labs');",
+              "err": {},
+              "uuid": "fd4c74a6-a4f0-4181-8eb1-79c196bbd377",
+              "parentUUID": "9a167385-e6ad-4034-9a75-436958c4c32f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fd4c74a6-a4f0-4181-8eb1-79c196bbd377"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2439,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
